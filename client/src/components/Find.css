@@ -1,0 +1,93 @@
+
+
+.card {
+  width: 100%;
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fdfdfd;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+
+}
+
+h1{
+  text-align: center;
+  color:green;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+hr {
+  margin: 20px 0;
+}
+
+p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  
+  .container, #container, .card {
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    height: auto; 
+  }
+
+ 
+  h1 {
+    font-size: 24px;
+  }
+
+ 
+  input[type="text"], .inputs, button, #login {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+*/
+  nav a {
+    display: block;
+    margin: 10px auto;
+    width: 80%;
+    padding: 10px 0;
+  }
+
+
+  header {
+    font-size: 18px;
+    height: 50px;
+    line-height: 50px;
+  }
+}

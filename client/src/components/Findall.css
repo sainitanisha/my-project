@@ -1,0 +1,134 @@
+
+.findall-btn {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  
+}
+
+
+.findall-btn h1 {
+  font-size: 32px;
+  color: green;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+
+.findall-btn form {
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+
+.findall-btn button {
+  background: linear-gradient(135deg, #4e9af1, #3b7dc9);
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: background 0.3s, transform 0.1s;
+}
+
+.findall-btn button:hover {
+  background: #218838;
+}
+
+.findall-btn button:active {
+  transform: scale(0.98);
+}
+
+.findall-btn button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(62,126,234,0.5);
+}
+
+/* Table wrapper to manage overflow */
+.findall-btn table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.findall-btn th,
+.findall-btn td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.findall-btn th {
+  background-color: #f3f7fc;
+  font-weight: 600;
+  color: #444;
+}
+
+
+.findall-btn tbody tr:nth-child(even) {
+  background-color: #fafbfc;
+}
+
+
+.findall-btn tbody tr:hover {
+  background-color: #eef4fb;
+}
+
+
+.findall-btn td[colspan] {
+  text-align: center;
+  color: #888;
+  padding: 2rem;
+}
+
+
+@media (max-width: 600px) {
+  .findall-btn table,
+  .findall-btn thead,
+  .findall-btn tbody,
+  .findall-btn th,
+  .findall-btn td,
+  .findall-btn tr {
+    display: block;
+  }
+
+  .findall-btn thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  .findall-btn tr {
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+  .findall-btn td {
+    border: none;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  .findall-btn td::before {
+    position: absolute;
+    top: 0;
+    left: 1rem;
+    width: 45%;
+    padding-right: 1rem;
+    white-space: nowrap;
+    font-weight: 600;
+    color: #333;
+  }
+
+  .findall-btn td:nth-of-type(1)::before { content: "Id"; }
+  .findall-btn td:nth-of-type(2)::before { content: "No"; }
+  .findall-btn td:nth-of-type(3)::before { content: "Name"; }
+  .findall-btn td:nth-of-type(4)::before { content: "Sal"; }
+}
